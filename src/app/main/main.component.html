@@ -1,0 +1,10 @@
+<app-onboard></app-onboard>
+
+<div *ngIf="showEmail">
+    <app-email
+    *ngFor="let mail of listOfEmails; index as i"
+    [mail]="mail"
+    [mailIndex]="i"
+    (onRemove)="onRemoveHandler($event)"
+    ></app-email> 
+</div>

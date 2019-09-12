@@ -1,0 +1,7 @@
+<div>
+    <p>{{ mail.sender }}</p>
+    <p>{{ mail.subject }}</p>
+    <p>Order-Number: {{ mail.order }}</p>
+    <p>Details: {{ mail.details }}</p>
+    <button (click)="removeEmail(mailIndex)">Remove</button>
+</div>
